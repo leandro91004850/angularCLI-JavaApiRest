@@ -6,11 +6,12 @@ import {HttpClient} from '@angular/common/http';
 })
 export class ContatoService {
 
-  contatosUrl =  'http://localhost:8084/categorias'; // postman app usado para testes de api
+  contatosUrl =  'http://192.168.1.20:8084/categorias'; // postman app usado para testes de api
 
   constructor(private http: HttpClient) { }
 
   listar(){
     return this.http.get<any[]>(`${this.contatosUrl}`); // indo busca os registro no endereço da API informada acima
   }
+  
 }

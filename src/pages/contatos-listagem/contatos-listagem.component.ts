@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ContatoService } from '../contato.service';
+import { ContatoService } from 'src/services/contato.service';
+
 
 @Component({
   selector: 'app-contatos-listagem',
   templateUrl: './contatos-listagem.component.html',
   styleUrls: ['./contatos-listagem.component.css']
 })
+
 export class ContatosListagemComponent implements OnInit {
 
   contatos: Array<any>;
@@ -20,5 +22,6 @@ export class ContatosListagemComponent implements OnInit {
     this.contatoService.listar().subscribe(dados => this.contatos = dados);
 
   }
+  
 
 }
