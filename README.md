@@ -11,6 +11,11 @@ dentro do projeto criado, só é necessário ser realizado uma vez
 ```javascript
 ng install
 ```
+gerando artefatos do angularCLI
+fonte: https://www.devmedia.com.br/angular-cli-como-criar-artefatos-do-angular/38250
+```javascript
+ng generate component nomeArquivo
+```
 executando o servidor
 ```javascript
 npm start
