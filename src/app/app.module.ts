@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ContatosListagemComponent } from 'src/pages/contatos-listagem/contatos-listagem.component';
 import { ContatoService } from 'src/services/contato.service';
-import { FilmesComponent } from './filmes/filmes.component';
+import { FilmesComponent } from '../pages/contatos-listagem/filmes/filmes.component';
 
 @NgModule({
   declarations: [
