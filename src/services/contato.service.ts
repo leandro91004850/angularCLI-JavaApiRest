@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class ContatoService {
 
-  contatosUrl =  'localhost:8082/categoria'; // postman app usado para testes de api
+  contatosUrl =  'localhost:8082/nutri'; // postman app usado para testes de api
 
   constructor(private http: HttpClient) { }
 
