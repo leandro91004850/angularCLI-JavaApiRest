@@ -10,6 +10,7 @@ import { ContatoService } from 'src/services/contato.service';
 import { FilmesComponent } from '../pages/contatos-listagem/filmes/filmes.component';
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro-component';
 import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
+import { CursosModule } from './cursos/cursos.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CursosModule
   ],
   providers: [ ContatoService],
   bootstrap: [AppComponent]
