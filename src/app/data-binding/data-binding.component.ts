@@ -11,6 +11,8 @@ export class DataBindingComponent implements OnInit {
   cursorAngular: boolean = true;
   urlImagem = 'http://lorempixel.com/400/200/nature/';
 
+  valorAtual: string = '';
+
   getValor(){ // função
     return 1;
   }
@@ -19,6 +21,16 @@ export class DataBindingComponent implements OnInit {
 
     return true;
   }
+
+  botaoClicado(){
+    alert('fui clicado!');
+  }
+
+  onKeyUp(evento){
+    //console.log(evento);
+    this.valorAtual = (<HTMLInputElement>evento.target).value;
+  }
+
 
   constructor() { }
 
